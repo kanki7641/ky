@@ -5,7 +5,7 @@ let handler = async (m, { conn, participants, usedPrefix, command }) => {
     let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
     let owr = m.chat.split`-`[0]
     await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
-    m.reply(`✅ تم إخراجة`)
+    m.reply(`تم خروج القرد🙂🌑`)
 }
 
 handler.help = ['kick @user']
